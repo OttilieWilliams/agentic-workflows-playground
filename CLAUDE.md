@@ -35,8 +35,8 @@ Tick these off as you go:
       with a payment method on file
 - [x] `gh secret set ANTHROPIC_API_KEY` in this repo
 - [x] First workflow added (see next section)
-- [ ] First run triggered successfully from the **Actions** tab
-- [ ] First output reviewed (typically a new issue or comment)
+- [x] First run triggered successfully from the **Actions** tab
+- [x] First output reviewed (typically a new issue or comment)
 
 ---
 
