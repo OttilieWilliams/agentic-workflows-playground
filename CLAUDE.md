@@ -31,10 +31,10 @@ Tick these off as you go:
 - [x] `gh extension install github/gh-aw`
 - [x] `gh aw --version` reports a version **newer than 0.71.3**
       (versions 0.68.4 through 0.71.3 are retired due to a billing bug)
-- [ ] Anthropic API key generated at <https://console.anthropic.com>
+- [x] Anthropic API key generated at <https://console.anthropic.com>
       with a payment method on file
-- [ ] `gh secret set ANTHROPIC_API_KEY` in this repo
-- [ ] First workflow added (see next section)
+- [x] `gh secret set ANTHROPIC_API_KEY` in this repo
+- [x] First workflow added (see next section)
 - [ ] First run triggered successfully from the **Actions** tab
 - [ ] First output reviewed (typically a new issue or comment)
 
@@ -48,23 +48,23 @@ plain GitHub issue you can read.
 ```bash
 # From inside this repo
 gh aw add-wizard
-# Pick: githubnext/agentics/daily-repo-status
+# Pick: githubnext/agentics/workflows/repo-status.md
 # Engine: claude
 
-# Or in one shot:
-gh aw add githubnext/agentics/daily-repo-status --engine claude
-gh aw compile
+# Or in one shot (daily-repo-status was renamed/restructured; use this path):
+gh aw add githubnext/agentics/workflows/repo-status.md --engine claude
+gh aw compile --approve
 ```
 
 Then:
 
 ```bash
 git add .github/
-git commit -m "Add daily-repo-status workflow"
+git commit -m "Add repo-status workflow"
 git push
 ```
 
-Trigger from the GitHub UI: **Actions** tab → **Daily Repo Status** → **Run workflow**.
+Trigger from the GitHub UI: **Actions** tab → **Repo Status** → **Run workflow**.
 Output appears as a new issue under the **Issues** tab.
 
 ---

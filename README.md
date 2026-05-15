@@ -16,8 +16,8 @@ gh extension install github/gh-aw
 gh secret set ANTHROPIC_API_KEY
 
 # Add and compile the first workflow
-gh aw add githubnext/agentics/daily-repo-status --engine claude
-gh aw compile
+gh aw add githubnext/agentics/workflows/repo-status.md --engine claude
+gh aw compile --approve
 
 # Commit and push
 git add .github/
